@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: serif;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+#menu-list {
+    display: none;
+}
+
+.menu-icon img {
+    height: 2vw;
+}
+
+header {
+    background-color: #808080;
+    padding: 15px;
+}
+
+.hero {
+    background-image: url(../images/background-photo.png);
+    background-size: cover;
+    height: 70vw;
+    margin-bottom: 5px;
+
+}
+
+.description {
+    font-size: 2vw;
+    align-self: center;
+}
+
+.hero hgroup {
+    color: black;
+    font-size: 3vw;
+    align-self: self-end;
+
+}
+
+.brief-intro img {
+    width: 250vw;
+}
+
+.drop-down img {
+    height: 4vh;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links :hover {
+    color: brown;
+}
+
+.callToActionButton {
+    border: bisque;
+    border-radius: 10px;
+    background: lightblue;
+    padding: 5px;
+    margin: 3px;
+    max-width: 260px;
+}
+
+.callToActionButton :hover {
+    background-color: rgb(69, 89, 96);
+}
+
+.skillSet {
+    border-collapse: collapse;
+}
+
+.skillSet,
+.skillSet th,
+.skillSet td {
+    border: 1px solid black;
+}
+
+aside {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background: beige;
+    ;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+aside li {
+    padding: 5px;
+}
+
+footer {
+    display: grid;
+    background: #808080;
+    font-size: 1vw;
+    width: 100%
+}
+
+footer nav {
+    grid-column: 2;
+    align-self: center;
+}
+
+footer p {
+    grid-column: 3;
+    align-self: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer img {
+    height: 2vw;
+
+}
+
+.project img {
+    max-width: 270px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(69, 89, 96);
+}
+
+.blog-card {
+    border: 1px solid rgba(0, 255, 255, 0.178);
+    background: rgba(211, 211, 211, 0.172);
+    padding: 10px;
+    margin: 5px;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template: repeat(4, auto) / 100%;
+    row-gap: 50px;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template: 50px auto 100px / auto;
+    row-gap: 50px;
+    min-height: 100vh;
+}
+
+.brief-intro {
+    display: grid;
+    grid-template: 100% / 50% auto;
+    column-gap: 10px;
+}
+
+.education {
+    display: grid;
+    grid-template: repeat(3, auto) / auto;
+
+}
+
+.side {
+    display: grid;
+    grid-template: auto / auto 115px;
+    column-gap: 10%;
+}
+
+.hobbyAndContact {
+    display: grid;
+    grid-template: repeat(6, auto) / auto;
+    row-gap: 30px;
+}
+
+.blog-wrapper,
+.portfolio-wrapper,
+.about-wrapper {
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr 4fr 1fr;
+    row-gap: 30px;
+}
+
+.card {
+    display: grid;
+    grid-template: auto / auto auto;
+}
+
+header,
+footer {
+    grid-column: 1 / -1;
+}
+
+.blog-wrapper main,
+.portfolio-wrapper main,
+.about-wrapper main,
+.home-wrapper main .brief-intro {
+    grid-column: 2
+}
+
+.portfolio-wrapper main {
+    display: grid;
+    grid-template: repeat(3, auto) / auto;
+    row-gap: 50px;
+}
+
+.hero {
+    grid-column: 1 / -1;
+}
+
+.blog-wrapper main {
+    display: grid;
+    grid-template: repeat(3, auto) / auto;
+    row-gap: 10px;
+}
+
+.home-wrapper {
+    background: lightgray;
+    grid-template: repeat(4, auto) / auto
+}
+
+.home-wrapper main .hero {
+    grid-column: 1 / -1;
+}
