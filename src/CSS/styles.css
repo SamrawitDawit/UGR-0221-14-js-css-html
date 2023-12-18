@@ -5,8 +5,8 @@
 
 html,
 body {
-    font-family: serif;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -23,15 +23,44 @@ body {
     height: 2vw;
 }
 
+/* 
+.menuList--vertical {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    margin: 70px 10px 0 auto;
+}
+
+.menuList--vertical.visible {
+    max-height: 600px;
+    top: 100px;
+    right: 400px;
+    background-color: #282828;
+    padding: 10px;
+    margin: 70px 10px 0 auto;
+    position: absolute;
+}
+
+.menuList--vertical li {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.menuList--vertical.visible li {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
 .hero {
     display: flex;
     justify-content: end;
     align-items: end;
-    background-image: url(../images/background-photo.png);
+    background-image: url(../images/6974845_4370.jpg);
     height: 80vw;
     background-size: cover;
     background-position: center;
-    margin-bottom: 5px;
+    margin-top: 1em;
 }
 
 .hero__image {
@@ -43,19 +72,24 @@ body {
     font-size: 0.75rem;
 }
 
+.hero__hgroup h1 {
+    font-weight: 700;
+}
+
 .briefIntro {
     display: flex;
+    gap: 2em;
     align-items: center;
+    padding: 2em 1em;
 }
 
 .briefIntro__description {
-    font-size: 0.5rem;
-    flex: 1 400px;
-    margin-right: 20px;
+    font-size: 1rem;
+    /* flex: 1 400px; */
 }
 
 .briefIntro__image {
-    flex: 2 1 400px;
+    width: 100em;
 }
 
 .about-wrapper,
@@ -63,7 +97,7 @@ body {
 .blog-wrapper {
     font-size: 1rem;
     text-align: center;
-    background: lightgray;
+    /* background: lightgray; */
     line-height: 1.5em;
 }
 
@@ -92,13 +126,15 @@ body {
     text-decoration: underline;
 }
 
+/* 
 header,
 footer {
     flex: 1;
-}
+} */
 
 main {
-    flex: 10 1 80%;
+    position: relative;
+    flex: 1;
 }
 
 img {
@@ -113,8 +149,12 @@ video {
 header {
     display: flex;
     justify-content: end;
-    background-color: #808080;
     padding: 15px;
+    background-color: #282828;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 1.5em 0;
 }
 
 .dropDown__image {
@@ -136,7 +176,7 @@ header {
     background: lightblue;
     padding: 0.75em;
     margin-bottom: 1em;
-    max-width: 260px;
+    max-width: 300px;
 }
 
 .callToActionButton :hover {
@@ -170,9 +210,10 @@ ul {
 
 .footer {
     display: grid;
-    background: #808080;
     font-size: 1vw;
     padding: 2em;
+    background-color: #282828;
+    color: white;
 }
 
 .footer__navigation {
@@ -317,7 +358,8 @@ video {
         background: none;
         display: flex;
         align-items: center;
-        margin: 0.5em 0 0.5em 1em;
+        height: 50vw;
+        margin: 4em 1em 2em 1em;
     }
 
     .hero__image {
@@ -344,7 +386,7 @@ video {
 
     .footer__navList {
         display: flex;
-        justify-content: space-around;
+        gap: 3em;
     }
 }
 
@@ -366,7 +408,7 @@ video {
     }
 
     .menuList__item {
-        font-size: 2rem;
+        font-size: 1.25rem;
         flex: 0 40px;
         margin-right: 2.5em;
     }
@@ -376,7 +418,6 @@ video {
         display: flex;
         align-items: center;
         height: 50vw;
-        margin: 0.5em 0 0.5em 1em;
     }
 
     .hero__hgroup {
@@ -407,4 +448,62 @@ video {
         height: 12em;
         width: 15em;
     }
+}
+
+.menu img {
+    width: 5em;
+}
+
+.menuList--vertical {
+    display: none;
+}
+
+.menuList--vertical li {
+    margin-bottom: 10px;
+}
+
+.menuList--vertical li a {
+    text-decoration: none;
+    color: white;
+}
+
+.mainWrapper {
+    margin-top: 10em;
+}
+
+.menuList__link {
+    color: white;
+}
+
+.menuList__link:hover,
+.menuList--vertical li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#project__description {
+    display: none;
+}
+
+#project__description.show {
+    max-width: 300px;
+    background: lightblue;
+    border-radius: 10px;
+    border: bisque;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+.confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
